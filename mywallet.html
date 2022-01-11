@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <style>
+         body{
+      background-color: #65b4cd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+         .hd{
+             position: sticky;
+      background-color: #5b5ba9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #dec8c8;
+      font-weight: bold;
+      height: 22px;
+      width: 1010px;
+      text-indent: 392px;
+      font-size: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      border-radius: 30px;}
+        .mw{
+            margin-top: 57px;
+            margin-left: 425px;
+            font-weight: bold;
+            width: 139px;
+        }
+        .bl{
+            
+            display: inline-block;
+            padding: 6px 2px;
+            font-weight: bold;
+            width: auto;
+        }
+        #ethicon{
+            position: relative;
+            top: 2px;
+        }
+        #bal{
+            padding: 3px 9px;
+            margin-top: 5px;
+            margin-left: 404px;
+            background-color: #6990c1;
+            border-radius: 33px;
+        }
+        .tra{
+            font-weight: bold;
+            background-color: #6990c1;
+            border-radius: 4px;
+            width: 128px;
+            padding: 2px 24px;
+            margin-top: 56px;
+        }
+        .table{
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0, 0.15);           
+        }
+        .table thead tr{
+            background-color: #6d7bc3;
+            color: #3f1a3f;
+            text-align: left;
+        }
+        .table th,
+        .table td{
+            padding: 12px 38px;
+        }
+        .table tbody tr{
+            border-bottom: 2px solid black;
+        }
+        .table tbody tr:nth-of-type(even){
+            background-color: #eac7c7;
+        }
+        .hd2{
+        position: sticky;
+        float: right;
+        padding: 16px 38px;
+        height: 35px;
+        width: 40px;
+        font-weight: bold;
+        
+        
+      }
+      .hd2 a{
+        text-decoration: none;
+        color: black; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #home{
+        position: relative;
+        left: 30px;
+      }
+      #con{
+        position: relative;
+        left: 13px;
+      }
+      #mw a{
+        background-color: #8585bd;
+        padding: 3px 9px;
+        border-radius: 10px;
+      }
+      .hd2icon{
+        position: relative;
+        left: 29px;
+        /* border: 1px solid red; */
+        padding: 10px 10px;
+        width: 139px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <div class="hd">Welcome to crypto wallet</div>
+    <div class="hd2" ><a href="#">Support</a></div>
+    <div class="hd2" id="con"><a href="#">Contact</a></div>
+    <div class="hd2" id="home"><a href="Cryptowallet.html">Home</a></div>
+    <div class="hd2" id="mw"><a href="mywallet.html">MyWallet</a></div>
+    <div class="hd2icon"><img src="wallet icon.png" height="23px" width="27px"> Crypto Wallet</div>
+    <div class="mw">My Wallet <img src="wallet icon.png" height="20px" width="23px"></div>
+        <div class="bl" id="bal">Balance : 47.98  </div>
+        <div class="bl" id="ethicon"><img id="ethicon" src="ETH.png" height="20px" width="23px"></div>
+    <div class="tra">Last Trasactions</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Txn Hash</th>
+                <th>Method</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>From</th>
+                <th>To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0x879c67d900b...</td>
+                <td>0xf233a</td>
+                <td>2 days ago</td>
+                <td>3.1 ETH</td>
+                <td>0x758f63c736a...</td>
+                <td>0xa4cf291ac4a...</td>
+            </tr>
+            <tr>
+                <td>0x72a5cb3eb2f...</td>
+                <td>0xa346b</td>
+                <td>10 days ago</td>
+                <td>0.9 ETH</td>
+                <td>0x458f63a73b3...</td>
+                <td>0xd4cf981ac89...</td>
+            </tr>
+            <tr>
+                <td>0x67a5b83eb23...</td>
+                <td>0xb346a</td>
+                <td>16 days ago</td>
+                <td>1.4 ETH</td>
+                <td>0x12c8f63a736...</td>
+                <td>0xa1cf981ac76...</td>
+            </tr>
+            <tr>
+                <td>0x12a5c33eb15...</td>
+                <td>0xc456b</td>
+                <td>1 month ago</td>
+                <td>7.6 ETH</td>
+                <td>0x458f63a73b3...</td>
+                <td>0xa2cf923acd3...</td>
+            </tr>
+            <tr>
+                <td>0x679c6ad906b...</td>
+                <td>0xa390b</td>
+                <td>3 months ago</td>
+                <td>0.2 ETH</td>
+                <td>0x348f65673a3...</td>
+                <td>0xa4c1591ac46...</td>
+            </tr>
+            <tr>
+                <td>0x129c6767900c...</td>
+                <td>0xf2334</td>
+                <td>3 months ago</td>
+                <td>5.4 ETH</td>
+                <td>0xd38f63c736a...</td>
+                <td>0xaccf291ac67...</td>
+            </tr>
+            <tr>
+                <td>0x569c57a30b9...</td>
+                <td>0xc55ca</td>
+                <td>10 months ago</td>
+                <td>1.9 ETH</td>
+                <td>0x678f63c7345...</td>
+                <td>0xc3cf291aca3...</td>
+            </tr>
+        </tbody>
+    </table>
+
+     
+</body>
+</html>

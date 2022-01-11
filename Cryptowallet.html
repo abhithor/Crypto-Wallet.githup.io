@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Wallet</title>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $("#myInput").on("keyup",function(){
+              var value = $(this).val().toLowerCase();
+              $("#mytable tr").filter(function(){
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+              });
+
+          });
+      });
+  </script>
+  <style>
+    body{
+      background-color: #65b4cd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hd{
+      background-color: #5b5ba9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #dec8c8;
+      font-weight: bold;
+      height: 22px;
+      width: 1010px;
+      text-indent: 392px;
+      font-size: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      border-radius: 30px;}
+      .hd2{
+        position: sticky;
+        float: right;
+        padding: 16px 38px;
+        height: 35px;
+        width: 40px;
+        font-weight: bold;
+        
+        
+      }
+      .hd2 a{
+        text-decoration: none;
+        color: black; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #home{
+        position: relative;
+        left: 30px;
+      }
+      #con{
+        position: relative;
+        left: 13px;
+      }
+      #mw a{
+        background-color: #8585bd;
+        padding: 3px 9px;
+        border-radius: 10px;
+      }
+      .hd2icon{
+        position: relative;
+        left: 29px;
+        /* border: 1px solid red; */
+        padding: 10px 10px;
+        width: 139px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .abovesrbar{
+        
+        margin-left: 382px;
+        margin-top: 59px;
+        height: 30px;
+        width: 307px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #092445;
+      }
+      .table{
+        font-family: ;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0, 0.15);
+        }
+        .table thead tr{
+            background-color: #5575af;
+            color: #230623;
+            text-align: left;
+        }
+        .table th,
+        .table td{
+            padding: 12px 40px;
+        }
+        .table tbody tr{
+            border-bottom: 2px solid black;
+        }
+        .table tbody tr:nth-of-type(even){
+            background-color: #eac7c7;
+        }
+        #myInput{
+          display: flex;
+          justify-content: center;
+          margin-left: 404px;
+          box-sizing: border-box;
+          border-radius: 15px;
+          align-items: center;
+          background: #5eb0e0;
+
+          position: relative;
+          height: 30px;
+          box-shadow: 0 0 0 1px #c697d6;
+        }
+      
+  </style>
+</head>
+<body>
+  <div class="hd">Welcome to crypto wallet</div>
+    <div class="hd2" ><a href="#">Support</a></div>
+    <div class="hd2" id="con"><a href="#">Contact</a></div>
+    <div class="hd2" id="home"><a href="Cryptowallet.html">Home</a></div>
+    <div class="hd2" id="mw"><a href="mywallet.html">MyWallet</a></div>
+    <div class="hd2icon"><img src="wallet icon.png" height="23px" width="27px"> Crypto Wallet</div>
+    <div class="abovesrbar">Enter Your Wallet Address</div>
+  <input type="text" id="myInput" placeholder="0x01">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Wallet Address</th>
+        <th>MetaData</th>
+        <th>Contract</th>
+        <th>Date of Purchase</th>
+        <th>Price Paid</th>
+        <th>Gas fee</th>
+      </tr>
+    </thead>
+    <tbody id="mytable">
+      <tr>
+        <td>0x01</td>
+        <td><a href="meta1.json">Editable</a></td>
+        <td><a href="contract1.html">0x34...f6</a></td>
+        <td>06/11/20</td>
+        <td>3.6 ETH</td>
+        <td>0.0234 ETH</td> 
+      </tr>
+      <tr>
+        <td>0x02</td>
+        <td><a href="meta2.json">Editable</a></td>
+        <td><a href="contract2.html">0x57...a5</a></td>
+        <td>27/09/20</td>
+        <td>5.7 ETH</td>
+        <td>0.0398 ETH</td>
+      </tr>
+      <tr>
+        <td>0x03</td>
+        <td>Freeze</td>
+        <td>0x98...j7</td>
+        <td>14/12/20</td>
+        <td>2.7 ETH</td>
+        <td>0.0267 ETH</td>
+      </tr>
+      <tr>
+        <td>0x04</td>
+        <td>Freeze</td>
+        <td>0x67...l8</td>
+        <td>06/07/20</td>
+        <td>1.9 ETH</td>
+        <td>0.0198 ETH</td>
+      </tr>
+      <tr>
+        <td>0x05</td>
+        <td>Freeze</td>
+        <td>0x89...b7</td>
+        <td>24/01/20</td>
+        <td>12.4 ETH</td>
+        <td>0.0178 ETH</td>
+      </tr>
+      <tr>
+        <td>0x06</td>
+        <td>Freeze</td>
+        <td>0x35...q9</td>
+        <td>06/11/20</td>
+        <td>17.7 ETH</td>
+        <td>0.0122 ETH</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+</body>
+</html>

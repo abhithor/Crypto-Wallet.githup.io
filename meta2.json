@@ -1,0 +1,34 @@
+ //   This is just an demo of meta data 2
+    
+ f = open('./metadata/all-traits.json',) 
+ data = json.load(f)
+ 
+ # Changes this IMAGES_BASE_URL to yours 
+ IMAGES_BASE_URL = "https://https://demoimage"
+ PROJECT_NAME = "META 1 NFT"
+ 
+ def getAttribute(key, value):
+     return {
+         "trait_type": key,
+         "value": value
+     }
+ for i in data:
+     token_id = i['tokenId']
+     token = {
+         "image": IMAGES_BASE_URL + str(token_id) + '.png',
+         "tokenId": token_id,
+         "name": PROJECT_NAME + ' ' + str(token_id),
+         "attributes": []
+     }
+
+my-nft.json
+{   
+   "description": "Friendly OpenSea Creature",      
+   "image": "https://https://demopng",  
+   "name": "Dave Starbelly",   
+   "attributes": [
+       { "trait_type": "Base", "value": "Starfish" },      
+       { "trait_type": "Eyes", "value": "Big" },      
+       { "trait_type": "Mouth","value": "Surprised" },
+   ]
+}
